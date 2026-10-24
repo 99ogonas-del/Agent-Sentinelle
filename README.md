@@ -82,6 +82,16 @@ Agent_Sentinelle/
 5. **Tests scénarios pièges** : preuve que l'agent ne peut pas contourner les règles
 6. **Publication** : GitHub + post LinkedIn
 
+## Carnet de démonstration
+
+Voir `docs/carnet_demo.md` pour les 5 scénarios pièges avec preuves visuelles :
+
+1. Danger sans garde-fou (envoi de 50 000 FCFA sans vérification)
+2. Envoi dans la limite (autorise + exécute)
+3. Envoi au-dessus de la limite (bloqué)
+4. Destinataire non autorisé (bloqué)
+5. Tentative de contournement par injection (bloqué)
+
 ## Auteur
 
 OgonasSec — Étudiant en Réseau et Sécurité Informatique (UVCI, Côte d'Ivoire)
