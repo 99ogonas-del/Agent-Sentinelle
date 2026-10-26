@@ -26,7 +26,7 @@ class GardeFou:
 
     def __init__(self, montant_max=MONTANT_MAX, destinataires=None, journal_path=JOURNAL_PATH):
         self.montant_max = montant_max
-        self.destinataires = destinataires or DESTINATAIRES_AUTORISES
+        self.destinataires = destinataires if destinataires is not None else []
         self.journal_path = journal_path
         self._ensure_journal_dir()
 

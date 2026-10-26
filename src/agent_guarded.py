@@ -13,14 +13,14 @@ import sys
 import os
 
 sys.path.insert(0, os.path.dirname(__file__))
-from sentinelle import GardeFou
+from sentinelle import GardeFou, DESTINATAIRES_AUTORISES
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 PAYMENT_URL = "http://localhost:5000"
 MODEL = "mistral:latest"
 
 # Instance du garde-fou
-gf = GardeFou()
+gf = GardeFou(destinataires=DESTINATAIRES_AUTORISES)
 
 
 def ask_llm(prompt):
